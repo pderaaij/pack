@@ -10,8 +10,6 @@
  * file that was distributed with this source code.
  */
 
-error_reporting(E_ALL);
-
 require __DIR__ . '/../src/bootstrap.php';
-$loader = new Philly\AutoLoad\SplClassLoader('Pack\Test', __DIR__);
+$loader = new Pack\AutoLoad\ClassLoader('Pack\Test', __DIR__);
 $loader->register();

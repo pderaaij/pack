@@ -1,0 +1,15 @@
+{
+    "name": "Complete package",
+    "artifacts":
+            [
+                {
+                    "name": "site",
+                    "type": "tar"
+                },
+                {
+                    "name": "site",
+                    "type": "phar"
+                }
+            ]
+
+}
