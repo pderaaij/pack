@@ -1,0 +1,9 @@
+#!/usr/bin/env php
+<?php
+require __DIR__.'/../src/bootstrap.php';
+
+use Pack\Application\Pack;
+
+// run the command application
+$application = new Pack();
+$application->run();
