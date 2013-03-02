@@ -1,9 +1,9 @@
 #!/usr/bin/env php
 <?php
-require __DIR__.'/../src/bootstrap.php';
+require __DIR__ . '/../src/bootstrap.php';
 
-use Pack\Application\Pack;
+use Pack\Application\Application;
 
 // run the command application
-$application = new Pack();
+$application = new Application();
 $application->run();

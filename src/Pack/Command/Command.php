@@ -15,7 +15,28 @@ use Symfony\Component\Console\Command\Command as BaseCommand;
  * @author Paul de Raaij <paulderaaij@eleven.nl>
  */
 abstract class Command extends BaseCommand {
-    //put your code here
+
+    private $pack;
+    private $io;
+
+    public function getPack() {
+        if (null === $this->pack) {
+            $application = $this->getApplication();
+            $this->pack = $application->getPack();
+        }
+
+        return $this->pack;
+    }
+
+    public function getIO() {
+        if (null === $this->io) {
+            $application = $this->getApplication();
+            $this->io = $application->getIO();
+        }
+
+        return $this->io;
+    }
+
 }
 
 ?>
